@@ -1,6 +1,32 @@
 # MAV_PROJECT
 Creating Build Instructions for Macros &amp; PX4 to be used in a Docker Image
 
+## BUILDING THE DOCKER IMAGE 
+STEP #1
+In Terminal, navigate to the Docker Image directory of your choosing and run the command
+```
+git clone https://github.com/wail-uottawa/docker-ros-elg5228.git
+```
+This will clone the repository for the Docker Image. 
+
+STEP #2
+Modify the file
+```
+docker-run.sh
+```
+Such that the course directory is mapped to a directory of your choosing on your remote system. 
+
+STEP #3
+
+Replace the ```customization.bash``` script with the one located in this repository. This will allow you to install more packages related to PX4 on the Docker Image.
+
+STEP #4
+With Docker Desktop Downloaded, run the ```
+docker-run.sh
+```
+script and the image should be pulled from Docker and then ran. You may use TigerVNC Viewer (password: vncpassword) to obtain a GUI representation.
+
+
 ## BUILDING THE PX4 LIBRARY ON DOCKER
 
 STEP #1
