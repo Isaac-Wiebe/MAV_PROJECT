@@ -18,10 +18,12 @@ Such that the course directory is mapped to a directory of your choosing on your
 
 STEP #3
 
-Replace the ```customization.bash``` script with the one located in this repository. This will allow you to install more packages related to PX4 on the Docker Image.
+Replace the ```customization.bash``` 
+script with the one located in this repository. This will allow you to install more packages related to PX4 on the Docker Image.
 
 STEP #4
-With Docker Desktop Downloaded, run the ```
+With Docker Desktop Downloaded, run the 
+```
 docker-run.sh
 ```
 script and the image should be pulled from Docker and then ran. You may use TigerVNC Viewer (password: vncpassword) to obtain a GUI representation.
