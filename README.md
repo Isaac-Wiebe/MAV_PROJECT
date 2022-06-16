@@ -61,7 +61,10 @@ In order to run MAVROS (with PX4), we enter the command ```roslaunch mavros px4.
 ## BUILDING VELOCITY CONTROLLER
 
 STEP #1 
-Navigate to the catkin_ws directory on the docker image. Call the command to build the ros package 
+Navigate to the catkin_ws directory on the docker image. Call the command ```catkin build velocitycontroller rospy geometry_msgs```to build the ros package.
+
+STEP #2
+The velocity controller can now be run using ```rosrun velocitycontroller getuserinputpy.py``` and in a seperate terminal ```rosrun velocitycontroller publishheartbeat.py```. The publisher publishes the last known state of the user input. Press w or a to controll the drone's y velocity, press a or d to control the x velocity and press space bar or v to controll the drone's z velocity. To get the drone to hover, press 'x'.
 
 ## RUNNING PX4
 
