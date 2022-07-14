@@ -72,7 +72,7 @@ STEP #1
 We first wish to configure the path to the URDF Quadcopter models. First navigate to the cloned PX4-Autopilot repository, and run the command ```source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/sitl_default```. If the URDF models are still not detected during execution, you may have to truncate the .jinja extension on these models.
 
 STEP #2 
-For convenience, we wish to add PX4 to the Ros Package Path. Do this by running ```export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)``` followed by ```export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools_sitl_gazebo 
+For convenience, we wish to add PX4 to the Ros Package Path. Do this by running ```export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)``` followed by ```export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools_sitl_gazebo``` 
 
 STEP #3
 We now can launch PX4 by calling the command ```roslaunch px4 posix_sitl.launch```. Note that this should be done after setting up the MAVROS process. 
